@@ -1,0 +1,90 @@
+#vista1 {
+background-image: url("img.webp");   
+border: solid 20px black;
+position: relative;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+padding: 250px;
+top: 0px;
+}
+
+#tituloBienvenida {
+    color: #c5c1c1; 
+    text-shadow: 8px 8px 8px #ba0c0c;
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+    left: 38%;
+    position: absolute;
+    top: 0;
+}
+
+#ingresaNombre {
+    color: #c5c1c1;  
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    left: -28%;
+    top: 220px;
+    font-weight: bold;
+}
+#userName {
+    position: relative;
+    left: -28%;
+    top: 240px;
+}
+#presionaBoton {
+    color: #f8f9f6;
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    left: 90%;
+    top: 40px;
+    font-weight: bold;  
+    animation: cambia-color 2s ease-in-out infinite; 
+}
+@keyframes cambia-color {
+    0% {
+      color: rgb(255, 255, 255);
+    }
+  
+    50% {
+      color: rgb(119, 16, 16);
+    }
+  
+    100% {
+      color: rgb(222, 142, 43);
+    }
+}
+#botonContinuar{
+    left: 110%;
+    top:200px;
+    background-image: url('boton1.webp');
+    position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  /* Establece el ancho del botón de acuerdo con el ancho de la imagen */
+  height: 100px;
+  border-radius: 30%;
+  border: none;
+}
+#imagen{
+    border: solid 10px black;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 5%;
+}
+#saludoJugador {
+    color: #c5c1c1; 
+    text-shadow: 8px 8px 8px #ba0c0c;
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+    left: 20%;
+    position: absolute;
+    top: 0;
+
+}

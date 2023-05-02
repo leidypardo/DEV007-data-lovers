@@ -1,6 +1,19 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import data from './data/got/got.js';
 
-console.log(example, data);
+let botonContinuar = document.getElementById("botonContinuar");
+vista1.style.display = "block";
+vista2.style.display = "none";
+botonContinuar.style.display = "block";
+
+//evento cuando se presiona el boton continuar para cambiar a la segunda vista
+botonContinuar.addEventListener("click", function () {
+    let nombreJugador=document.getElementById("userName").value; 
+    document.getElementById("saludoJugador").innerHTML= "Bienvenid@ "+ nombreJugador + " elige una casa";
+    vista1.style.display = "none";
+    vista2.style.display = "block";
+    botonContinuar.style.display = "block";
+  });
+
+
+  
+
