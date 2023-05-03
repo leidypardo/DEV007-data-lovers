@@ -24,10 +24,10 @@ vista2.style.display = "none";
 vista3.style.display = "block";
 
 
-function filtroPorEdad(objeto) {
+function filtroPor(objeto) {
   return objeto.id ==1;
 }
-const objetosFiltrados = data.got.filter(filtroPorEdad);
+const objetosFiltrados = data.got.filter(filtroPor);
 
 console.log(objetosFiltrados);
 
