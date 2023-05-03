@@ -88,3 +88,18 @@ top: 0px;
     top: 0;
 
 }
+
+
+.container {
+  display:flex;
+}
+.column {
+  flex: 1;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+
+}
+ul {
+  list-style-type: none;
+}
