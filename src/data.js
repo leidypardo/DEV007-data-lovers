@@ -9,4 +9,6 @@ export const anotherExample = () => {
 };*/
 import data from './data/got/got.js';
 
-filterData(data,data.got.filterData.);
+let filtrarDatos = data.got.filter(family => family == "House Targaryen");
+console.log(filtrarDatos);
+

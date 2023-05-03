@@ -12,6 +12,8 @@ botonContinuar.addEventListener("click", function () {
     vista1.style.display = "none";
     vista2.style.display = "block";
     botonContinuar.style.display = "block";
+    let filtrarDatos = data.got.filter(casa => casa.family == "House Stark" || casa.family == "Stark" );
+    console.log(filtrarDatos);
   });
 
 
