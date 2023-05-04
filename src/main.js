@@ -17,7 +17,18 @@ botonContinuar.addEventListener("click", function () {
 
     let filtrarDatos = data.got.filter(casa => casa.family == "House Stark" || casa.family == "Stark" );
     console.log(filtrarDatos);
-=======
+
+    let name=filtrarDatos[1].fullName;
+    let titulo=filtrarDatos[1].title;
+    let familia=filtrarDatos[1].family;
+    let imagen=filtrarDatos[1].imageUrl;
+    let nacimiento=filtrarDatos[1].born; 
+    let muerte=filtrarDatos[1].death; 
+
+    
+
+    document.getElementById("datos").innerHTML= name + "<br>"+ titulo +"<br>"+ familia +"<br>"+ imagen +"<br>"+ nacimiento +"<br>"+muerte;
+
 
 
     
