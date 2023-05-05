@@ -1,3 +1,4 @@
+import got from './data/got/got.js';
 import data from './data/got/got.js';
 
 let botonContinuar = document.getElementById("botonContinuar");
@@ -14,41 +15,24 @@ botonContinuar.addEventListener("click", function () {
     vista2.style.display = "block";
     vista3.style.display = "none";
     botonContinuar.style.display = "block";
-
-    let filtrarDatos = data.got.filter(casa => casa.family == "House Stark" || casa.family == "Stark" );
-    console.log(filtrarDatos);
-
-    let name=filtrarDatos[1].fullName;
-    let titulo=filtrarDatos[1].title;
-    let familia=filtrarDatos[1].family;
-    let imagen=filtrarDatos[1].imageUrl;
-    let nacimiento=filtrarDatos[1].born; 
-    let muerte=filtrarDatos[1].death; 
-
+      
+      let filtrarDatos = data.got.filter(casa => casa.family == "House Stark" || casa.family == "Stark");
+      console.log(filtrarDatos);
     
+      let name=filtrarDatos[0].fullName;
+      let titulo=filtrarDatos[0].title;
+      let familia=filtrarDatos[0].family;
+      let imagen=filtrarDatos[0].imageUrl;
+      let fechaNacimiento=filtrarDatos[0].born; 
+      let fechaMuerte=filtrarDatos[0].death;
+  if (fechaMuerte=== undefined) {
+    fechaMuerte="No aplica"
+  }
+      document.getElementById("datos").innerHTM = name + "<br>"+ titulo +"<br>"+ familia +"<br>"+ imagen +"<br>"+ fechaNacimiento +"<br>"+fechaMuerte;
+    }
+ 
+);
 
-    document.getElementById("datos").innerHTML= name + "<br>"+ titulo +"<br>"+ familia +"<br>"+ imagen +"<br>"+ nacimiento +"<br>"+muerte;
-
-
-
-    
-botonEnviar.addEventListener("click", function () {
-
-  vista1.style.display = "none";
-vista2.style.display = "none";
-vista3.style.display = "block";
-
-
-function filtroPor(objeto) {
-  return objeto.id ==1;
-}
-const objetosFiltrados = data.got.filter(filtroPor);
-
-console.log(objetosFiltrados);
-
-});
-
-  });
 
 
 
