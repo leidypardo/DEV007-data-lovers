@@ -1,27 +1,27 @@
-body{
+html body{
   width: 100%;
   height: 100%;
   
   }
   #vista1 {
   background-image: url("img.webp");   
-  border: solid 20px black;
+  border: solid 1.25em black;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 250px;
-  top: 0px;
+  padding: 14.625em;
+  top: 0em;
   }
   
   #tituloBienvenida {
       color: #c5c1c1; 
-      text-shadow: 8px 8px 8px #ba0c0c;
+      text-shadow: 0.5px 0.5px 0.5px #ba0c0c;
       font-family: Arial, sans-serif;
       font-size: 3em;
       left: 38%;
       position: absolute;
-      top: 0;
+      top: 0em;
   }
   
   #ingresaNombre {
@@ -30,23 +30,23 @@ body{
       font-family: Arial, sans-serif;
       font-size: 1em;
       left: -28%;
-      top: 220px;
+      top: 13.75em;
       font-weight: bold;
   }
   #userName {
       position: relative;
       left: -28%;
-      top: 240px;
+      top: 15em;
   }
   #presionaBoton {
-      color: #f8f9f6;
-      position: relative;
-      font-family: Arial, sans-serif;
-      font-size: 1em;
-      left: 90%;
-      top: 40px;
-      font-weight: bold;  
-      animation: cambia-color 2s ease-in-out infinite; 
+    color: #f8f9f6;
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    left: 90%;
+    top: 40px;
+    font-weight: bold;  
+    animation: cambia-color 2s ease-in-out infinite; 
   }
   @keyframes cambia-color {
       0% {
@@ -62,21 +62,22 @@ body{
       }
   }
   #botonContinuar{
-      left: 100%;
-      top:200px;
-      background-image: url('boton1.webp');
-      position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100px;
-    /* Establece el ancho del botón de acuerdo con el ancho de la imagen */
-    height: 100px;
-    border-radius: 30%;
-    border: none;
+    left: 100%;
+    top:200px;
+    background-image: url('boton1.webp');
+    position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  /* Establece el ancho del botón de acuerdo con el ancho de la imagen */
+  height: 100px;
+  border-radius: 30%;
+  border: none;
   }
+  
   #imagen{
-      border: solid 10px black;
+      border: solid 0.625em black;
       position: relative;
       background-size: cover;
       background-repeat: no-repeat;
@@ -85,42 +86,30 @@ body{
   }
   #saludoJugador {
       color: #c5c1c1; 
-      text-shadow: 8px 8px 8px #ba0c0c;
+      text-shadow: 0.5em 0.5em 0.5em #ba0c0c;
       font-family: Arial, sans-serif;
       font-size: 3em;
       left: 20%;
       position: absolute;
-      top: 0;
+      top: 0em;
   
   }
   #vista2 {
-    background-image: url("./gallery/fondo.jpeg");   
-   
+    background-image: url("./gallery/fondo.jpeg"); 
     position:relative;
     background-size: cover;
-    
     padding: 7.5%;
-    top: 0px;
+    top: 0em;
     }
     
   .container {
     display:flex;
   }
   
-  
-  /*
-  .columnss{
-    display: flex;
-    flex:2;
-    column-gap: 0em;  /*espacios*/
-  /*padding: 100px;
-  width: 100%;
-  }*/
-  
   table{
     display: flex;
     position: center;
-  
+   left: 0.625em;
   }
   
   #casa{
@@ -132,12 +121,10 @@ body{
   /* Establece el ancho del botón de acuerdo con el ancho de la imagen */
   height: 0.625em;
   
-  
-  
   }
   #vista3 {
-    padding: 50px;
-    top: 0px;
+    padding: 3.125em;
+    top: 0em;
     }
   
   
@@ -149,26 +136,23 @@ body{
     text-align: center;
   }
   tbody{
-    left: 10px;
-  }
-  /*
-  #vistaCasa{
-  text-align: center;
+    left: 0.625em;
   
-  }*/
+  }
+ 
   header{
     background-color:#00000051;
-    height: 80px;
+    height: 5em;
     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
+    top: 0em;
+    left: 0em;
   }
   
   .nav{
     display: flex;
     justify-content: space-between;
-  max-width: 992px;
+  max-width: 62em;
   margin: 0 auto;
   }
   .nav-link{
@@ -176,28 +160,27 @@ body{
     text-decoration: none;
   }
   .logo{
-  font-size: 25px;
-  padding: 0 40px;
-  line-height: 80px;
+  font-size: 1.563em;
+  padding: 0 2.5em;
+  line-height: 5em;
   }
   
   .nav-menu{
     display: flex;
-    margin-right: 40px;
+    margin-right: 2.5em;
     list-style: none; 
   
   }
   .nav-menu-item{
-    font-size: 18px;
-    margin: 0 10px;
+    font-size: 1.125em;
+    margin: 0 0.625em;
     line-height: 50px;
     width: max-content;
   }
   .nav-menu-link{
-    padding: 8px 12px;
+    padding: 0.5em 0.75em;
   }
   
   .nav-menu-link:hover{
     background-color: rgb(27, 50, 51);
   }
-  
