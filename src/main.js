@@ -99,5 +99,7 @@ botonContinuar.addEventListener("click", function () {
   retornar.addEventListener("click", function () {
     vista2.style.display = "block";
     vista3.style.display = "none";
+    botonContinuar.style.display = "block";
+
   });
 });
