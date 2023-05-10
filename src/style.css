@@ -75,6 +75,13 @@ html body{
   border-radius: 30%;
   border: none;
   }
+  #botonContinuar:hover{
+    transform: scale(1.05);
+/*background: #FA8971;*/
+color: #fff;
+  
+    cursor: pointer;
+  }
   
   #imagen{
       border: solid 0.625em black;
@@ -102,15 +109,9 @@ html body{
     top: 0em;
     }
     
-  .container {
-    display:flex;
-  }
   
-  table{
-    display: flex;
-    position: center;
-   left: 0.625em;
-  }
+  
+ 
   
   #casa{
     left: 0.625em;
@@ -177,10 +178,30 @@ html body{
     line-height: 50px;
     width: max-content;
   }
+  .nav-menu:hover{
+    transform: scale(1.05);
+/*background: #FA8971;*/
+color: #fff;
+  
+    cursor: pointer;
+  }
   .nav-menu-link{
     padding: 0.5em 0.75em;
   }
   
   .nav-menu-link:hover{
     background-color: rgb(27, 50, 51);
+  }
+
+  .botonEnviar:hover{
+    transform: scale(1.05);
+/*background: #FA8971;*/
+color: #fff;
+  
+    cursor: pointer;
+  }
+  /*deTodo{
+
+    display: flex;
+
   }

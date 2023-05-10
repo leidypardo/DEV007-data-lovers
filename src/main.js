@@ -46,9 +46,7 @@ let filtrarcasas = [];
         filtrarcasas = data.got.filter(casa => casa.family == "Tarth");
       } 
       
-  
-  
-  
+     
       const seccionCasas=document.querySelector("[name='informacioncasa']").outerHTML;
       document.querySelector("[name='informacioncasa']").style.display="none";
 
