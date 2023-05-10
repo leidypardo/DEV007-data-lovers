@@ -401,7 +401,7 @@ export default{
       "lastName": "Sparrow",
       "fullName": "The High Sparrow",
       "title": "High Septon",
-      "family": "Sparrow",
+      "family": "Sparr  ow",
       "imageUrl": "https://thronesapi.com/assets/images/the-high-sparrow.jpg",
       "born": null
     },

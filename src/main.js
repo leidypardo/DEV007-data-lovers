@@ -49,8 +49,10 @@ botonContinuar.addEventListener("click", function () {
           filtrarcasas = data.got.filter(casa => casa.family == "Bolton");
         }else if (AlmacenarIdBoton === "genteLibre") {
           filtrarcasas = data.got.filter(casa => casa.family == "Free Folk");
+        }else if (AlmacenarIdBoton === "none") {
+          filtrarcasas = data.got.filter(casa => casa.family == "House Clegane" || casa.family == "House Baelish"|| casa.family == "House Seaworth"|| casa.family == "Unknown"|| casa.family == "Naathi"|| casa.family == "None"|| casa.family == "Lorathi"|| casa.family == "Sparr  ow"|| casa.family == "Unkown"|| casa.family == "Lorath"|| casa.family == "Naathi"|| casa.family == "None"|| casa.family == "Lorathi"|| casa.family == "Sparr  ow"|| casa.family == "Unkown"|| casa.family == "Lorath"|| casa.family == "Worm"|| casa.family == ""|| casa.family == "Qyburn"|| casa.family == "Bronn");
         }
-
+      
         const seccionCasas = document.querySelector("[name='informacioncasa']").outerHTML;
         document.querySelector("[name='informacioncasa']").style.display = "none";
 
