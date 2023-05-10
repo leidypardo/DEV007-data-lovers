@@ -38,26 +38,17 @@ let filtrarcasas = [];
           filtrarcasas = data.got.filter(casa => casa.family == "House Tyrell" || casa.family == "Tyrell");
         }  else if (AlmacenarIdBoton === "greyjoy") {  
         filtrarcasas = data.got.filter(casa => casa.family == "House Greyjoy" || casa.family == "House Greyjoy" || casa.family == "Greyjoy");
+      } else if (AlmacenarIdBoton === "martell") {  
+        filtrarcasas = data.got.filter(casa => casa.family == "viper"|| casa.family == "Sand");
+      } else if (AlmacenarIdBoton === "naharin") {  
+        filtrarcasas = data.got.filter(casa => casa.family == "Naharis");
+      } else if (AlmacenarIdBoton === "tarth") {  
+        filtrarcasas = data.got.filter(casa => casa.family == "Tarth");
       } 
       
-
-      
-     
-      let filtrarGenteLibre = data.got.filter(casa => casa.family == "Free Folk" || casa.family == "House Greyjoy" || casa.family == "Greyjoy");
-    
-
-      let filtrarMartel = data.got.filter(casa => casa.family == "viper"|| casa.family == "Sand");
-      
-
-      let filtrarNaharis = data.got.filter(casa => casa.family == "Naharis");
-     
-      
-      let filtrarNaath = data.got.filter(casa => casa.family == "Naathi");
-      
-    
-      let filtrarTarth = data.got.filter(casa => casa.family == "Tarth");
-   
-     
+  
+  
+  
       const seccionCasas=document.querySelector("[name='informacioncasa']").outerHTML;
       document.querySelector("[name='informacioncasa']").style.display="none";
 
