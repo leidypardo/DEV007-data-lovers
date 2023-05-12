@@ -52,10 +52,21 @@ botonContinuar.addEventListener("click", function () {
         }else if (AlmacenarIdBoton === "none") {
           filtrarcasas = data.got.filter(casa => casa.family == "House Clegane" || casa.family == "House Baelish"|| casa.family == "House Seaworth"|| casa.family == "Unknown"|| casa.family == "Naathi"|| casa.family == "None"|| casa.family == "Lorathi"|| casa.family == "Sparr  ow"|| casa.family == "Unkown"|| casa.family == "Lorath"|| casa.family == "Naathi"|| casa.family == "None"|| casa.family == "Lorathi"|| casa.family == "Sparr  ow"|| casa.family == "Unkown"|| casa.family == "Lorath"|| casa.family == "Worm"|| casa.family == ""|| casa.family == "Qyburn"|| casa.family == "Bronn");
         }
-      
         const seccionCasas = document.querySelector("[name='informacioncasa']").outerHTML;
         document.querySelector("[name='informacioncasa']").style.display = "none";
 
+        
+        function sortData(data, sortBy, sortOrder) {
+          if (sortOrder === "ascendente") {
+            return data.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
+          } else if (sortOrder === "descendente") {
+            return data.sort((a, b) => b[sortBy].localeCompare(a[sortBy]));
+          } else {
+            return data;
+          }
+        }
+        const informacionOrdenada = sortData(filtrarcasas, "fullName", "ascendente");
+        
         for (let i = 0; i < filtrarcasas.length; i++) {
           let AcumularAtributos = seccionCasas;
           let nombre = filtrarcasas[i].fullName;
@@ -72,6 +83,7 @@ botonContinuar.addEventListener("click", function () {
             muerte = "no aplica"
           }
           document.getElementById("datos").innerHTML += nombre + "<br>" + titulo + "<br>" + familia + "<br>" + nacimiento + "<br>" + muerte;
+          
           AcumularAtributos = AcumularAtributos.replace("[nombre]", nombre);
           AcumularAtributos = AcumularAtributos.replace("[img]", imagen);
           AcumularAtributos = AcumularAtributos.replace("[familia]", familia);
@@ -105,3 +117,5 @@ botonContinuar.addEventListener("click", function () {
 
   });
 });
+
+
