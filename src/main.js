@@ -18,9 +18,8 @@ botonContinuar.addEventListener("click", function () {
   botonContinuar.style.display = "block";
   let filtrarcasas = [];
   let botonEnviar = document.querySelectorAll(".botonEnviar");
-  let cuandosehaceclick = function () {
-    botonEnviar.forEach(boton => {
-      boton.addEventListener('click', function () {
+  
+  let cuandosehaceclick = function (boton) {
         AlmacenarIdBoton = boton.id
         console.log(AlmacenarIdBoton);
         if (AlmacenarIdBoton === "stark") {
@@ -55,7 +54,7 @@ botonContinuar.addEventListener("click", function () {
         const seccionCasas = document.querySelector("[name='informacioncasa']").outerHTML;
         document.querySelector("[name='informacioncasa']").style.display = "none";
 
-        
+ 
         function sortData(data, sortBy, sortOrder) {
           if (sortOrder === "ascendente") {
             return data.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
@@ -97,11 +96,9 @@ botonContinuar.addEventListener("click", function () {
         vista1.style.display = "none";
         vista2.style.display = "none";
         vista3.style.display = "block";
-      });
-    });
   }
   botonEnviar.forEach(boton => {
-    boton.addEventListener("click", cuandosehaceclick);
+    boton.addEventListener("click", () => cuandosehaceclick(boton));
   });
   let home = document.getElementById("home");
   home.addEventListener("click", function () {
@@ -111,6 +108,9 @@ botonContinuar.addEventListener("click", function () {
   });
   let retornar = document.getElementById("retornar");
   retornar.addEventListener("click", function () {
+   document.querySelector("#deTodo").innerHTML = ''
+   document.getElementById("datos").innerHTML = ''
+   document.querySelector("[name='informacioncasa']").removeAttribute('style');
     vista2.style.display = "block";
     vista3.style.display = "none";
     botonContinuar.style.display = "block";
