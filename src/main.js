@@ -65,6 +65,7 @@ botonContinuar.addEventListener("click", function () {
           }
         }
         const informacionOrdenada = sortData(filtrarcasas, "fullName", "ascendente");
+       
         
         for (let i = 0; i < filtrarcasas.length; i++) {
           let AcumularAtributos = seccionCasas;
