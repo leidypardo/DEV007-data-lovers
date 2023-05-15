@@ -60,7 +60,7 @@ body {
     color: rgb(138, 128, 128);
   }
   100% {
-    color: rgb(172, 132, 52);
+    color: rgb(227, 216, 59);
   }
 }
 
@@ -95,16 +95,23 @@ body {
   position: absolute;
   top: 0em;
 }
+
+#bienvenidoaCasa{
+  color: #070606;
+  text-shadow: 0.5em 0.5em 0.5em #d8e704;
+  font-family: Arial, sans-serif;
+
+}
 #vista2 {
-  background-image: url("./gallery/fondo.jpeg");
+  background-image: url("./gallery/thumb-1920-862811.jpg");
   position: absolute;
-  left: 10px;
-  right: 10px;
+  left: 0px;
+  right: 0px;
   background-size: cover;
   padding: 10%;
   border: none;
-  top: 1em;
-  bottom: 1em;
+  top: 0em;
+  bottom: -1em;
 }
 #vista3 {
   padding: 3.125em;
@@ -199,7 +206,7 @@ header {
 }
 .infocasa{
   display: inline-block;
-  border: 8px solid rgb(255, 249, 249);
+  border: 3px solid rgb(227, 216, 59);
   background-color: black;
   text-align: center;
   border-radius: 50px;
