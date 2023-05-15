@@ -111,7 +111,7 @@ body {
   text-align: center;
   font-weight: bold;
   top: 0em;
-  background-color: #f5f0f0;
+  background-color: #ffffff;
 }
 img {
   width: 100px;
@@ -148,6 +148,16 @@ header {
   font-size: 1.563em;
   padding: 0 2.5em;
   line-height: 5em;
+ 
+}
+
+#orden{
+  width: 120px;
+  cursor: pointer;
+
+}
+#orden:hover{
+  background-color:  rgb(201, 201, 201);
 }
 .nav-menu {
   display: flex;
@@ -159,6 +169,14 @@ header {
   margin: 0 0.625em;
   line-height: 50px;
   width: max-content;
+
+
+}
+
+.nav-menu-item select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 }
 .nav-menu:hover {
   transform: scale(1.05);
@@ -170,7 +188,7 @@ header {
   padding: 0.5em 0.75em;
 }
 .nav-menu-link:hover {
-  background-color: rgb(27, 50, 51);
+  background-color: rgb(201, 201, 201);
 }
 
 .botonEnviar:hover {
@@ -181,15 +199,17 @@ header {
 }
 .infocasa{
   display: inline-block;
-  border: 2px solid black;
+  border: 8px solid rgb(255, 249, 249);
+  background-color: black;
   text-align: center;
-  width: 21.875em ;
-  height: 25em;
+  border-radius: 50px;
+  width: 400px;
+  height: 450px;
   position: relative;
   padding-top: 1px;
-  border-radius: 5%;
-  background-color: #938e8ef0;
+color:#f8f9f6
 }
+
 #imagenpersonaje{
   width: 160px;
   height: 180px;  
