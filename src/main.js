@@ -67,7 +67,6 @@ botonContinuar.addEventListener("click", function () {
         }     
        // sortData(filtrarcasas, "fullName", "ascendente");
         //aqui
-        
         const barraDesplegable = document.getElementById('orden');
         
         barraDesplegable.addEventListener('change', function() {  
@@ -109,10 +108,10 @@ botonContinuar.addEventListener("click", function () {
             let muerte = data[i].death;
   
             if (nacimiento === null) {
-              nacimiento = " "  
+              nacimiento = "No Registra fecha de nacimiento"  
             }
             if (muerte === undefined) {
-              muerte = " "
+              muerte = "No Registra fecha de muerte"
             }
             document.getElementById("datos").innerHTML += nombre + "<br>" + titulo + "<br>" + familia + "<br>" + nacimiento + "<br>" + muerte;
           
@@ -136,10 +135,10 @@ botonContinuar.addEventListener("click", function () {
           let muerte = filtrarcasas[i].death;
 
           if (nacimiento === null) {
-            nacimiento = " "
+            nacimiento = "No Registra fecha de nacimiento"
           }
           if (muerte === undefined) {
-            muerte = " "
+            muerte = "No Registra fecha de muerte"
           }
           document.getElementById("datos").innerHTML += nombre + "<br>" + titulo + "<br>" + familia + "<br>" + nacimiento + "<br>" + muerte;
           

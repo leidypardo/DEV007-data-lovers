@@ -2,6 +2,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+
 }
 #vista1 {
   background-image: url("./gallery/imgen.jpg");
@@ -110,7 +111,7 @@ body {
   text-align: center;
   font-weight: bold;
   top: 0em;
-  background-color: #000000c4;
+  background-color: #f5f0f0;
 }
 img {
   width: 100px;
@@ -126,9 +127,9 @@ caption {
 }
 
 header {
-  background-color: #faf6f65f;
+  background-color: #000000;
   height: 5em;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0em;
   left: 0em;
@@ -182,19 +183,19 @@ header {
   display: inline-block;
   border: 2px solid black;
   text-align: center;
-  width: 400px;
-  height: 450px;
+  width: 21.875em ;
+  height: 25em;
   position: relative;
   padding-top: 1px;
+  border-radius: 5%;
+  background-color: #938e8ef0;
 }
 #imagenpersonaje{
-  width: 200px;
-  height: 210px;  
+  width: 160px;
+  height: 180px;  
   border-radius: 5%;
-  border: 2px solid black;
   transform: scale(1.05);
 }
-
 @keyframes agrandar {
   from {
     transform: scale(1);
