@@ -1,81 +1,73 @@
-html, body{
+html,
+body {
   width: 100%;
   height: 100%;
-
-  }
-  #vista1 {
-  background-image: url("./gallery/imgen.jpg");   
-
+}
+#vista1 {
+  background-image: url("./gallery/imgen.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
- /* padding: 14.625em;*/
- position:fixed;
- left: 0px;  
-right: 0em;
-   background-size: cover;
- 
-   border:none;
-top:0em;
-bottom:0em;
+  /* padding: 14.625em;*/
+  position: fixed;
+  left: 0px;
+  right: 0em;
+  background-size: cover;
+  border: none;
+  top: 0em;
+  bottom: 0em;
+}
+#tituloBienvenida {
+  color: #c5c1c1;
+  text-shadow: 0.5px 0.5px 0.5px #ba0c0c;
+  font-family: Arial, sans-serif;
+  font-size: 3em;
+  left: 38%;
+  position: absolute;
+  top: 0px;
+}
+#ingresaNombre {
+  color: #c5c1c1;
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  left: 20%;
+  bottom: 800px;
+  top: 31em;
+  font-weight: bold;
+}
+#userName {
+  position: relative;
+  left: 20%;
+  top: 36.7em;
+}
+#presionaBoton {
+  color: #f8f9f6;
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  left: 67%;
+  top: 250px;
+  font-weight: bold;
+  animation: cambia-color 2s ease-in-out infinite;
+}
+@keyframes cambia-color {
+  0% {
+    color: rgb(255, 255, 255);
   }
-  
-  #tituloBienvenida {
-      color: #c5c1c1; 
-      text-shadow: 0.5px 0.5px 0.5px #ba0c0c;
-      font-family: Arial, sans-serif;
-      font-size: 3em;
-      left: 38%;
-      position: absolute;
-      top: 0px;
-   
+  50% {
+    color: rgb(138, 128, 128);
   }
-  
-  #ingresaNombre {
-      color: #c5c1c1;  
-      position: relative;
-      font-family: Arial, sans-serif;
-      font-size: 1em;
-      left: 20%;
-bottom: 800px;
-      top: 31em;
-      font-weight: bold;
-      
+  100% {
+    color: rgb(172, 132, 52);
   }
-  #userName {
-      position: relative;
-      left: 20%;
-      top: 36.7em;
-  }
-  #presionaBoton {
-    color: #f8f9f6;
-    position: relative;
-    font-family: Arial, sans-serif;
-    font-size: 1em;
-    left: 67%;
-    top: 250px;
-    font-weight: bold;  
-    animation: cambia-color 2s ease-in-out infinite; 
-  }
-  @keyframes cambia-color {
-      0% {
-        color: rgb(255, 255, 255);
-      }
-    
-      50% {
-        color: rgb(158, 143, 143);
-      }
-    
-      100% {
-        color: rgb(186, 147, 69);
-      }
-  }
-  #botonContinuar{
-   
-    left: 75%;
-    top:385px;
-    background-image: url("./gallery/w400.jpg");
-    position: relative;
+}
+
+#botonContinuar {
+  left: 75%;
+  top: 385px;
+  background-image: url("./gallery/w400.jpg");
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -84,144 +76,147 @@ bottom: 800px;
   height: 100px;
   border-radius: 30%;
   border: none;
-  }
-  #botonContinuar:hover{
-    transform: scale(1.05);
-/*background: #FA8971;*/
-color: #fff;
   
-    cursor: pointer;
-  }
-  
-  #imagen{
-      border: solid 0.625em black;
-      position: relative;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      left: 5%;
-  }
-  #saludoJugador {
-      color: #c5c1c1; 
-      text-shadow: 0.5em 0.5em 0.5em #ba0c0c;
-      font-family: Arial, sans-serif;
-      font-size: 3em;
-      left: 20%;
-      position: absolute;
-      top: 0em;
-  
-  }
-  #vista2 {
-    background-image: url("./gallery/fondo.jpeg"); 
-    position: absolute;
-  left: 10px;  
-right: 10px;
-    background-size: cover;
-    padding: 10%;
-    border:none;
-top:1em;
-bottom:1em;
-    }
-    
-  #vista3 {
-    padding: 3.125em;
-    top: 0em;
-    }
-  
-  
-  img{
-   width: 100px;
-   
-  }
-  table{
-   
-width: 70%;
-padding-top: 40px;
-position:relative;
-left: 150px;
-
+}
+#botonContinuar:hover {
+  transform: scale(1.05);
+  /*background: #FA8971;*/
+  color: #fff;
+  cursor: pointer;
 }
 
-  caption{
-    caption-side:bottom;
-  }
+#saludoJugador {
+  color: #070606;
+  text-shadow: 0.5em 0.5em 0.5em #083206;
+  font-family: Arial, sans-serif;
+  font-size: 3em;
+  left: 20%;
+  position: absolute;
+  top: 0em;
+}
+#vista2 {
+  background-image: url("./gallery/fondo.jpeg");
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  padding: 10%;
+  border: none;
+  top: 1em;
+  bottom: 1em;
+}
+#vista3 {
+  padding: 3.125em;
+  text-align: center;
+  font-weight: bold;
+  top: 0em;
+  background-color: #000000c4;
+}
+img {
+  width: 100px;
+}
+table {
+  width: 70%;
+  padding-top: 40px;
+  position: relative;
+  left: 150px;
+}
+caption {
+  caption-side: bottom;
+}
 
-
-  header{
-    background-color:#00000051;
-    height: 5em;
-    position: fixed;
-    width: 100%;
-    top: 0em;
-    left: 0em;
-  } 
-  .nav{
-    display: flex;
-    justify-content: space-between;
+header {
+  background-color: #faf6f65f;
+  height: 5em;
+  position: fixed;
+  width: 100%;
+  top: 0em;
+  left: 0em;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
   max-width: 62em;
   margin: 0 auto;
-  }
-  .nav-link{
-    color: white;
-    text-decoration: none;
-  }
-  .logo{
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+.logo {
   font-size: 1.563em;
   padding: 0 2.5em;
   line-height: 5em;
-  }
-  .nav-menu{
-    display: flex;
-    margin-right: 2.5em;
-    list-style: none; 
-  
-  }
-  .nav-menu-item{
-    font-size: 1.125em;
-    margin: 0 0.625em;
-    line-height: 50px;
-    width: max-content;
-  }
-  .nav-menu:hover{
-    transform: scale(1.05);
-/*background: #FA8971;*/
-color: #fff;
-  
-    cursor: pointer;
-  }
-  .nav-menu-link{
-    padding: 0.5em 0.75em;
-  }
-  
-  .nav-menu-link:hover{
-    background-color: rgb(27, 50, 51);
-  }
+}
+.nav-menu {
+  display: flex;
+  margin-right: 2.5em;
+  list-style: none;
+}
+.nav-menu-item {
+  font-size: 1.125em;
+  margin: 0 0.625em;
+  line-height: 50px;
+  width: max-content;
+}
+.nav-menu:hover {
+  transform: scale(1.05);
+  /*background: #FA8971;*/
+  color: #fff;
+  cursor: pointer;
+}
+.nav-menu-link {
+  padding: 0.5em 0.75em;
+}
+.nav-menu-link:hover {
+  background-color: rgb(27, 50, 51);
+}
 
-  .descripcion{
-top: 10px;
-column-count:2;
- /* border: solid 2px #ba0c0c;*/
-position:relative;
-    text-align: center;
-    width: 90%;
-    height: 90%;
-  
+.botonEnviar:hover {
+  transform: scale(1.05);
+  /*background: #FA8971;*/
+  color: #fff;
+  cursor: pointer;
+}
+.infocasa{
+  display: inline-block;
+  border: 2px solid black;
+  text-align: center;
+  width: 400px;
+  height: 450px;
+  position: relative;
+  padding-top: 1px;
+}
+#imagenpersonaje{
+  width: 200px;
+  height: 210px;  
+  border-radius: 5%;
+  border: 2px solid black;
+  transform: scale(1.05);
+}
 
+@keyframes agrandar {
+  from {
+    transform: scale(1);
   }
-  .infocasa{
-/*display:inline-block;*/
-display:fixed;
-font-size: 15px;
-/*border: solid 2px #ba0c0c;*/
-height:220px; 
-top: 50px;
+  to {
+    transform: scale(1.1); /* se agranda solo un 10% */
   }
-  
- 
-  .botonEnviar:hover{
-    transform: scale(1.05);
-/*background: #FA8971;*/
-color: #fff;
-  
-    cursor: pointer;
+}
+
+img:hover {
+  animation: reducir 1s ease-in-out forwards;
+}
+
+@keyframes reducir {
+  from {
+    transform: scale(1.1); /* se reduce del 110% al 100% */
   }
+  to {
+    transform: scale(1);
+  }
+}
+
+
+
+

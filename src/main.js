@@ -20,6 +20,8 @@ botonContinuar.addEventListener("click", function () {
   let botonEnviar = document.querySelectorAll(".botonEnviar");
   
   let cuandosehaceclick = function (boton) {
+        const BorrarListaNueva = document.getElementById("datos");
+        BorrarListaNueva.style.display = "none"; //ocultar info
         AlmacenarIdBoton = boton.id
         console.log(AlmacenarIdBoton);
         if (AlmacenarIdBoton === "stark") {
@@ -53,7 +55,6 @@ botonContinuar.addEventListener("click", function () {
         }
         const seccionCasas = document.querySelector("[name='informacioncasa']").outerHTML;
         document.querySelector("[name='informacioncasa']").style.display = "none";
-
  
         function sortData(data, sortBy, sortOrder) {
           if (sortOrder === "ascendente") {
@@ -63,10 +64,68 @@ botonContinuar.addEventListener("click", function () {
           } else {
             return data;
           }
-        }
-        const informacionOrdenada = sortData(filtrarcasas, "fullName", "ascendente");
-       
+        }     
+       // sortData(filtrarcasas, "fullName", "ascendente");
+        //aqui
         
+        const barraDesplegable = document.getElementById('orden');
+        
+        barraDesplegable.addEventListener('change', function() {  
+          const orderValue = document.getElementById("orden").value;
+        
+          if (orderValue === 'ascendente') {
+            document.querySelector("#deTodo").innerHTML = ''
+            document.getElementById("datos").innerHTML = ''
+            document.querySelector("[name='informacioncasa']").removeAttribute('style');
+            vista2.style.display = "none";
+            vista3.style.display = "block";
+            botonContinuar.style.display = "block";
+            let informacionOrdenada = sortData(filtrarcasas, "fullName", "ascendente");
+            actualizarResultados(informacionOrdenada);
+           
+          } else {
+            document.querySelector("#deTodo").innerHTML = ''
+            document.getElementById("datos").innerHTML = ''
+            document.querySelector("[name='informacioncasa']").removeAttribute('style');
+            vista2.style.display = "none";
+            vista3.style.display = "block";
+            botonContinuar.style.display = "block";
+            let informacionOrdenadaDesc = sortData(filtrarcasas, "fullName", "descendente");
+            actualizarResultados(informacionOrdenadaDesc);
+          }
+        });
+        
+        function actualizarResultados(data) {
+          console.log(data);
+          const seccionCasas2 = document.querySelector("[name='informacioncasa']").outerHTML;
+          document.querySelector("[name='informacioncasa']").style.display = "none";
+          for (let i = 0; i < data.length; i++) {
+            let AcumularAtributos2 = seccionCasas2;
+            let nombre = data[i].fullName;
+            let titulo = data[i].title;
+            let familia = data[i].family;
+            let imagen = data[i].imageUrl;
+            let nacimiento = data[i].born;
+            let muerte = data[i].death;
+  
+            if (nacimiento === null) {
+              nacimiento = " "  
+            }
+            if (muerte === undefined) {
+              muerte = " "
+            }
+            document.getElementById("datos").innerHTML += nombre + "<br>" + titulo + "<br>" + familia + "<br>" + nacimiento + "<br>" + muerte;
+          
+            AcumularAtributos2 = AcumularAtributos2.replace("[nombre]", nombre);
+            AcumularAtributos2 = AcumularAtributos2.replace("[img]", imagen);
+            AcumularAtributos2 = AcumularAtributos2.replace("[familia]", familia);
+            AcumularAtributos2 = AcumularAtributos2.replace("[titulo]", titulo);
+            AcumularAtributos2 = AcumularAtributos2.replace("[nacimiento]", nacimiento);
+            AcumularAtributos2 = AcumularAtributos2.replace("[muerte]", muerte);
+           
+            document.querySelector("#deTodo").innerHTML += AcumularAtributos2;
+          }
+        }
         for (let i = 0; i < filtrarcasas.length; i++) {
           let AcumularAtributos = seccionCasas;
           let nombre = filtrarcasas[i].fullName;
@@ -77,10 +136,10 @@ botonContinuar.addEventListener("click", function () {
           let muerte = filtrarcasas[i].death;
 
           if (nacimiento === null) {
-            nacimiento = "no aplica"
+            nacimiento = " "
           }
           if (muerte === undefined) {
-            muerte = "no aplica"
+            muerte = " "
           }
           document.getElementById("datos").innerHTML += nombre + "<br>" + titulo + "<br>" + familia + "<br>" + nacimiento + "<br>" + muerte;
           
@@ -90,7 +149,7 @@ botonContinuar.addEventListener("click", function () {
           AcumularAtributos = AcumularAtributos.replace("[titulo]", titulo);
           AcumularAtributos = AcumularAtributos.replace("[nacimiento]", nacimiento);
           AcumularAtributos = AcumularAtributos.replace("[muerte]", muerte);
-
+          console.log(AcumularAtributos);
           document.querySelector("#deTodo").innerHTML += AcumularAtributos;
 
         }
@@ -111,10 +170,11 @@ botonContinuar.addEventListener("click", function () {
   retornar.addEventListener("click", function () {
    document.querySelector("#deTodo").innerHTML = ''
    document.getElementById("datos").innerHTML = ''
+   document.getElementById("orden").value = ""
    document.querySelector("[name='informacioncasa']").removeAttribute('style');
-    vista2.style.display = "block";
-    vista3.style.display = "none";
-    botonContinuar.style.display = "block";
+   vista2.style.display = "block";
+   vista3.style.display = "none";
+   botonContinuar.style.display = "block";
 
   });
 });
