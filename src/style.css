@@ -60,7 +60,7 @@ body {
     color: rgb(138, 128, 128);
   }
   100% {
-    color: rgb(172, 132, 52);
+    color: rgb(227, 216, 59);
   }
 }
 
@@ -148,7 +148,6 @@ header {
   font-size: 1.563em;
   padding: 0 2.5em;
   line-height: 5em;
- 
 }
 
 #orden{
@@ -169,8 +168,6 @@ header {
   margin: 0 0.625em;
   line-height: 50px;
   width: max-content;
-
-
 }
 
 .nav-menu-item select{
@@ -199,7 +196,7 @@ header {
 }
 .infocasa{
   display: inline-block;
-  border: 8px solid rgb(255, 249, 249);
+  border: 3px solid rgb(227, 216, 59);
   background-color: black;
   text-align: center;
   border-radius: 50px;
@@ -237,6 +234,7 @@ img:hover {
     transform: scale(1);
   }
 }
+
 
 
 
