@@ -2,6 +2,11 @@ import { filterData, sortData } from './data.js';
 import data from './data/got/got.js';
 
 const botonContinuar = document.getElementById("botonContinuar");
+
+const vista1 =document.getElementById("vista1"); 
+const vista2 =document.getElementById("vista2");
+const vista3 =document.getElementById("vista3");
+
 let AlmacenarIdBoton = "";
 vista1.style.display = "block";
 vista2.style.display = "none";
@@ -59,7 +64,7 @@ botonContinuar.addEventListener("click", function () {
     });
         
     function actualizarResultados(data) {
-    console.log(data);
+      console.log(data);
       const seccionCasas2 = document.querySelector("[name='informacioncasa']").outerHTML;
       document.querySelector("[name='informacioncasa']").style.display = "none";
       for (let i = 0; i < data.length; i++) {
@@ -68,8 +73,8 @@ botonContinuar.addEventListener("click", function () {
         const titulo = data[i].title;
         const familia = data[i].family;
         const imagen = data[i].imageUrl;
-        const nacimiento = data[i].born;
-        const muerte = data[i].death;
+        let nacimiento = data[i].born;
+        let muerte = data[i].death;
   
         if (nacimiento === null) {
           nacimiento = "No Registra fecha de nacimiento"  
@@ -91,7 +96,7 @@ botonContinuar.addEventListener("click", function () {
     }
     for (let i = 0; i < filtradoFinal.length; i++) {
       let AcumularAtributos = seccionCasas;
-      let nombre = filtradoFinal[i].fullName;
+      const nombre = filtradoFinal[i].fullName;
       const titulo = filtradoFinal[i].title;
       const familia = filtradoFinal[i].family;
       const imagen = filtradoFinal[i].imageUrl;
@@ -112,7 +117,7 @@ botonContinuar.addEventListener("click", function () {
       AcumularAtributos = AcumularAtributos.replace("[titulo]", titulo);
       AcumularAtributos = AcumularAtributos.replace("[nacimiento]", nacimiento);
       AcumularAtributos = AcumularAtributos.replace("[muerte]", muerte);
-          //console.log(AcumularAtributos);
+      //console.log(AcumularAtributos);
       document.querySelector("#deTodo").innerHTML += AcumularAtributos;
 
     }
@@ -129,15 +134,15 @@ botonContinuar.addEventListener("click", function () {
     vista2.style.display = "none";
     vista3.style.display = "none";
   });
-  let retornar = document.getElementById("retornar");
+  const retornar = document.getElementById("retornar");
   retornar.addEventListener("click", function () {
-   document.querySelector("#deTodo").innerHTML = ''
-   document.getElementById("datos").innerHTML = ''
-   document.getElementById("orden").value = ""
-   document.querySelector("[name='informacioncasa']").removeAttribute('style');
-   vista2.style.display = "block";
-   vista3.style.display = "none";
-   botonContinuar.style.display = "block";
+    document.querySelector("#deTodo").innerHTML = ''
+    document.getElementById("datos").innerHTML = ''
+    document.getElementById("orden").value = ""
+    document.querySelector("[name='informacioncasa']").removeAttribute('style');
+    vista2.style.display = "block";
+    vista3.style.display = "none";
+    botonContinuar.style.display = "block";
 
   });
 });
