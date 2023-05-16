@@ -8,7 +8,7 @@
   },
   "extends": "eslint:recommended",
   "rules": {
-    "no-console": "warn",
+    "no-console": "Off", //,"warn"
     "import/extensions": 0,
     "no-var": "error",
     "prefer-const": "error",
