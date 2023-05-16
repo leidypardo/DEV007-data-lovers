@@ -147,4 +147,3 @@ botonContinuar.addEventListener("click", function () {
   });
 });
 
-
