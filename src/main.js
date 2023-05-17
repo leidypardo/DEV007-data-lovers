@@ -5,13 +5,13 @@ const botonContinuar = document.getElementById("botonContinuar");
 
 const vista1 =document.getElementById("vista1"); 
 const vista2 =document.getElementById("vista2");
-const vista3 =document.getElementById("vista3");
+const vista3 =document.getElementById("vista3");  
 
-let AlmacenarIdBoton = "";
+let AlmacenarIdBoton = "";          //almacenar el nombre de la casa seleccionada
 vista1.style.display = "block";
 vista2.style.display = "none";
 vista3.style.display = "none";
-botonContinuar.style.display = "block";
+botonContinuar.style.display = "block";  //pasar a la segunda vista
 
 //evento cuando se presiona el boton continuar para cambiar a la segunda vista
 botonContinuar.addEventListener("click", function () {
@@ -22,7 +22,7 @@ botonContinuar.addEventListener("click", function () {
   vista3.style.display = "none";
   botonContinuar.style.display = "block";
   // const filtradoFinal = [];
-  const botonEnviar = document.querySelectorAll(".botonEnviar");
+  const botonEnviar = document.querySelectorAll(".botonEnviar"); //selecciona las clases de boton enviar.
   
   const cuandosehaceclick = function (boton) {
     const BorrarListaNueva = document.getElementById("datos");
@@ -30,11 +30,11 @@ botonContinuar.addEventListener("click", function () {
     AlmacenarIdBoton = boton.id
     console.log(AlmacenarIdBoton);
        
-    const filtradoFinal = filterData(data,AlmacenarIdBoton);
-      
+    const filtradoFinal = filterData(data,AlmacenarIdBoton); //almacena la informacion de los personajes dependiendo la casa
+     
     const seccionCasas = document.querySelector("[name='informacioncasa']").outerHTML;
     document.querySelector("[name='informacioncasa']").style.display = "none";
-
+    
     const barraDesplegable = document.getElementById('orden');
         
     barraDesplegable.addEventListener('change', function() {  
@@ -64,7 +64,7 @@ botonContinuar.addEventListener("click", function () {
     });
         
     function actualizarResultados(data) {
-      console.log(data);
+     
       const seccionCasas2 = document.querySelector("[name='informacioncasa']").outerHTML;
       document.querySelector("[name='informacioncasa']").style.display = "none";
       for (let i = 0; i < data.length; i++) {
@@ -126,10 +126,11 @@ botonContinuar.addEventListener("click", function () {
     vista3.style.display = "block";
   }
   botonEnviar.forEach(boton => {
-    boton.addEventListener("click", () => cuandosehaceclick(boton));
+    boton.addEventListener("click", () => cuandosehaceclick(boton)); //me trae todas las casa que hay 
+   
   });
-  const home = document.getElementById("home");
-  home.addEventListener("click", function () {
+  const casa = document.getElementById("casa");
+  casa.addEventListener("click", function () {
     vista1.style.display = "block";
     vista2.style.display = "none";
     vista3.style.display = "none";
