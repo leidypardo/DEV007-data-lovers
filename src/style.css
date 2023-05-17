@@ -194,12 +194,19 @@ header {
 .nav-menu-link:hover {
   background-color: rgb(201, 201, 201);
 }
+.botonEnviar {
+border-radius: 15%;
+
+}
 
 .botonEnviar:hover {
-  transform: scale(1.05);
+  transform: scale(1.09);
   /*background: #FA8971;*/
-  color: #fff;
+ 
   cursor: pointer;
+}
+img{
+  border-radius: 15%;
 }
 .infocasa{
   display: inline-block;
