@@ -77,7 +77,6 @@ body {
   height: 100px;
   border-radius: 30%;
   border: none;
-  
 }
 #botonContinuar:hover {
   transform: scale(1.05);
@@ -161,13 +160,11 @@ header {
 }
 
 #orden{
-  width: 120px;
+  width: 90px;
   cursor: pointer;
-
-}
-#orden:hover{
   background-color:  rgb(201, 201, 201);
 }
+
 .nav-menu {
   display: flex;
   margin-right: 2.5em;
