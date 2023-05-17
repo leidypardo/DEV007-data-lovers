@@ -1,4 +1,4 @@
-**# Data Lovers**
+﻿**# Data Lovers**
 
 \## Índice
 
@@ -76,7 +76,7 @@ Se diseño una Interfaz de Usuario mediante la plataforma de balsamig, en la cua
 <img src="https://github.com/leidypardo/DEV007-data-lovers/blob/main/src/gallery/3.jpeg">
 
 
-Para tener una mejor perspectiva del proyecto, con funcionalidad y demás características se puede ingresar al siguiente link. <a href="https://balsamiq.cloud/s6uzhqq/pscs7rn/rC3FC">
+Para tener una mejor perspectiva del proyecto, con funcionalidad y demás características se puede ingresar al siguiente link. <a href="https://balsamiq.cloud/s6uzhqq/pscs7rn/rC3FC"> balsamiq</a>
 
 
 \## 5. Implementación de la Interfaz de Usuario (HTML/CSS/JS)
