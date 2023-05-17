@@ -34,11 +34,9 @@ usuarias, al lado derecho.
 
 ## 2. Resumen del proyecto
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
+En este proyecto encontraras un apagina web para visualizar la data de la serie Juego de tronos (GOT), la cual podras filtrar por Casas, tales como casa Tyrell, Casa Lannister, Casa Baratheon, Casa Martell, Casa Stark, Casa Targaryen, Casa Greyjoi, Casa Mormont, Casa naharis, gente libre y una opcion de None, en donde puedes encontrar los demas personajes de preferencia.  
 
-Como entregable final tendrás una página web que permita **visualizar la data,
+
 filtrarla, ordenarla y hacer algún cálculo agregado**. Con cálculo agregado
 nos referimos a distintos cálculos que puedes hacer con la data para mostrar
 información aún más relevante para los usuarios (promedio, el valor máximo
