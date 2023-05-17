@@ -29,7 +29,7 @@ Historia 3:
 - La pagina debe dejar ingresar al usuario a su respectiva casa casa y ver los  personajes que hay dependiendo la casa seleccionada.
 - Debe retornar toda la infromacion del personaje con su respectiva imagen.- 
 
-![Image text] (a href="https://github.com/Dahiana-moreno/DEV007-data-lovers/blob/main/src/gallery/Dragones%20De%20Daenerys.jpg")
+![Image text] <img src="/DEV007-data-lovers/blob/main/src/gallery/Dragones%20De%20Daenerys.jpg">
 Historia 4: 
     COMO: Usuario
     QUIERO: tener la posibilidad de retornar a la segunda vista estadno en la tercera.
