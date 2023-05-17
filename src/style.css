@@ -97,12 +97,16 @@ body {
 }
 
 #bienvenidoaCasa{
-  color: #070606;
+  color: #000000;
   font-family: Arial, sans-serif;
-
+}
+#saludoJugador{
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background-position: center;
 }
 #vista2 {
-  background-image: url("./gallery/thumb-1920-862811.jpg");
+  background-image: url("https://i.pinimg.com/originals/7c/ad/b4/7cadb4fe837c2fa783a0812f7d0ac67d.jpg");
   position: absolute;
   left: 0px;
   right: 0px;
