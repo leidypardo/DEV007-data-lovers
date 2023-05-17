@@ -76,4 +76,9 @@ describe('sortData', () => {
     const arreglo = sortData(data.got, "fullName", "descendente")
     expect(arreglo[0].fullName).toBe("Ygritte");
   });
+  
+  it('deberia retornar el arreglo "data"',() => {
+    const arreglo = sortData(data.got,"fullName")
+    expect(arreglo[0].fullName).toBe("Ygritte");
+  });
 });

@@ -77,7 +77,6 @@ body {
   height: 100px;
   border-radius: 30%;
   border: none;
-  
 }
 #botonContinuar:hover {
   transform: scale(1.05);
@@ -97,12 +96,16 @@ body {
 }
 
 #bienvenidoaCasa{
-  color: #070606;
+  color: #000000;
   font-family: Arial, sans-serif;
-
+}
+#saludoJugador{
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background-position: center;
 }
 #vista2 {
-  background-image: url("./gallery/thumb-1920-862811.jpg");
+  background-image: url("./gallery/imagen2.jpg");  
   position: absolute;
   left: 0px;
   right: 0px;
@@ -157,13 +160,11 @@ header {
 }
 
 #orden{
-  width: 120px;
+  width: 90px;
   cursor: pointer;
-
-}
-#orden:hover{
   background-color:  rgb(201, 201, 201);
 }
+
 .nav-menu {
   display: flex;
   margin-right: 2.5em;
