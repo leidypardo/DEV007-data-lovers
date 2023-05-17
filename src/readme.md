@@ -50,7 +50,6 @@ Historia 3:
 - La pagina debe dejar ingresar al usuario a su respectiva casa casa y ver los  personajes que hay dependiendo la casa seleccionada.
 - Debe retornar toda la infromacion del personaje con su respectiva imagen.- 
 
-![Image text] <img src="https://github.com/Dahiana-moreno/DEV007-data-lovers/blob/main/src/gallery/Dragones%20De%20Daenerys.jpg">
 Historia 4: 
     COMO: Usuario
     QUIERO: Tener la posibilidad de retornar a la segunda vista estadno en la tercera.
@@ -100,9 +99,9 @@ mejoraste en tu propuesta final.
 \## 6. Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 
 Pantallazos Finales.
-<p><img src="https://github.com/leidypardo/DEV007-data-lovers/blob/main/src/vista1Final.ong">
-<p><img src="https://github.com/leidypardo/DEV007-data-lovers/blob/main/src/vista2Final.ong">
-<p><img src="https://github.com/leidypardo/DEV007-data-lovers/blob/main/src/vista3Final.ong">
+<p><img src="https://github.com/leidypardo/DEV007-data-lovers/blob/main/src/gallery/vista1Final.png">
+<p><img src="https://github.com/leidypardo/DEV007-data-lovers/blob/main/src/gallery/vista2Final.pngg">
+<p><img src="https://github.com/leidypardo/DEV007-data-lovers/blob/main/src/gallery/vista3Final.png">
 
 
 \## 7. Pruebas unitarias
@@ -113,7 +112,7 @@ Este proyecto cuenta con Pruebas Unitarias (\_tests\_), con las funciones encarg
 
 \_filtrar\_ y \_ordenar\_ la data, las cuales cuentan con  una cobertura del 98.48% en branch, 100% stmts, 100% funcs y 100% lines.
 
-<img src="https://github.com/leidypardo/DEV007-data-lovers/blob/main/src/testeo.png">
+<img src="https://github.com/leidypardo/DEV007-data-lovers/blob/main/src/gallery/testeo.png">
 
 
 
