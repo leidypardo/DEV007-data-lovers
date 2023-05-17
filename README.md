@@ -82,7 +82,7 @@ Para tener una mejor perspectiva del proyecto, con funcionalidad y demás cara
 \## 5. Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 
 Pantallazos Finales.
-<p><img src="https://github.com/leidypardo/DEV007-data-lovers/blob/main/src/gallery/vista1Final.png">
+<p><img src="https://github.com/Dahiana-moreno/DEV007-data-lovers/blob/main/src/gallery/vista1Final.png">
 <p><img src="https://github.com/leidypardo/DEV007-data-lovers/blob/main/src/gallery/vista2Final.png">
 <p><img src="https://github.com/leidypardo/DEV007-data-lovers/blob/main/src/gallery/vista3Final.png">
 
