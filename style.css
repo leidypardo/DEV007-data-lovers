@@ -1,0 +1,255 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+}
+#vista1 {
+  background-image: url("./gallery/imgen.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* padding: 14.625em;*/
+  position: fixed;
+  left: 0px;
+  right: 0em;
+  background-size: cover;
+  border: none;
+  top: 0em;
+  bottom: 0em;
+}
+#tituloBienvenida {
+  color: #c5c1c1;
+  text-shadow: 0.5px 0.5px 0.5px #ba0c0c;
+  font-family: Arial, sans-serif;
+  font-size: 3em;
+  left: 38%;
+  position: absolute;
+  top: 0px;
+}
+#ingresaNombre {
+  color: #c5c1c1;
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  left: 20%;
+  bottom: 800px;
+  top: 31em;
+  font-weight: bold;
+}
+#userName {
+  position: relative;
+  left: 20%;
+  top: 36.7em;
+}
+#presionaBoton {
+  color: #f8f9f6;
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  left: 67%;
+  top: 250px;
+  font-weight: bold;
+  animation: cambia-color 2s ease-in-out infinite;
+}
+@keyframes cambia-color {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+  50% {
+    color: rgb(138, 128, 128);
+  }
+  100% {
+    color: rgb(227, 216, 59);
+  }
+}
+
+#botonContinuar {
+  left: 75%;
+  top: 385px;
+  background-image: url("./gallery/w400.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  /* Establece el ancho del botón de acuerdo con el ancho de la imagen */
+  height: 100px;
+  border-radius: 30%;
+  border: none;
+}
+#botonContinuar:hover {
+  transform: scale(1.05);
+  /*background: #FA8971;*/
+  color: #fff;
+  cursor: pointer;
+}
+
+#saludoJugador {
+  color: #070606;
+  text-shadow: 0.5em 0.5em 0.5em #083206;
+  font-family: Arial, sans-serif;
+  font-size: 3em;
+  left: 20%;
+  position: absolute;
+  top: 0em;
+}
+
+#bienvenidoaCasa{
+  color: #000000;
+  font-family: Arial, sans-serif;
+}
+#saludoJugador{
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background-position: center;
+}
+#vista2 {
+  background-image: url("./gallery/imagen2.jpg");  
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  background-size: cover;
+  padding: 10%;
+  border: none;
+  top: 0em;
+  bottom: -1em;
+}
+#vista3 {
+  padding: 3.125em;
+  text-align: center;
+  font-weight: bold;
+  top: 0em;
+  background-color: #ffffff;
+}
+img {
+  width: 100px;
+}
+table {
+  width: 70%;
+  padding-top: 40px;
+  position: relative;
+  left: 150px;
+}
+caption {
+  caption-side: bottom;
+}
+
+header {
+  background-color: #000000;
+  height: 5em;
+  position: absolute;
+  width: 100%;
+  top: 0em;
+  left: 0em;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 62em;
+  margin: 0 auto;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+.logo {
+  font-size: 1.563em;
+  padding: 0 2.5em;
+  line-height: 5em;
+}
+
+#orden{
+  width: 90px;
+  cursor: pointer;
+  background-color:  rgb(201, 201, 201);
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 2.5em;
+  list-style: none;
+}
+.nav-menu-item {
+  font-size: 1.125em;
+  margin: 0 0.625em;
+  line-height: 50px;
+  width: max-content;
+}
+
+.nav-menu-item select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.nav-menu:hover {
+  transform: scale(1.05);
+  /*background: #FA8971;*/
+  color: #fff;
+  cursor: pointer;
+}
+.nav-menu-link {
+  padding: 0.5em 0.75em;
+}
+.nav-menu-link:hover {
+  background-color: rgb(201, 201, 201);
+}
+.botonEnviar {
+border-radius: 15%;
+
+}
+
+.botonEnviar:hover {
+  transform: scale(1.09);
+  /*background: #FA8971;*/
+ 
+  cursor: pointer;
+}
+img{
+  border-radius: 15%;
+}
+.infocasa{
+  display: inline-block;
+  border: 3px solid rgb(227, 216, 59);
+  background-color: black;
+  text-align: center;
+  border-radius: 50px;
+  width: 400px;
+  height: 450px;
+  position: relative;
+  padding-top: 1px;
+color:#f8f9f6
+}
+
+#imagenpersonaje{
+  width: 160px;
+  height: 180px;  
+  border-radius: 5%;
+  transform: scale(1.05);
+}
+@keyframes agrandar {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1); /* se agranda solo un 10% */
+  }
+}
+
+img:hover {
+  animation: reducir 1s ease-in-out forwards;
+}
+
+@keyframes reducir {
+  from {
+    transform: scale(1.1); /* se reduce del 110% al 100% */
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+
+
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="vista1">
+      <div id="bienvenida">
+        <h1 id="tituloBienvenida">BIENVENID@ </h1>
+        <p id="ingresaNombre"> INGRESA TU NOMBRE</p>
+        <input type="text" id="userName"> 
+      <button id="botonContinuar"></button>
+      <p id="presionaBoton" >CLICK EN EL LOBO PARA CONTINUAR</p>
+    </div>
+  </section>
+  <section id="vista2">
+      <table id="grupocasas">
+        <!-- <div class="columnss"> --> 
+          <tr>
+          <td><button id="genteLibre" class="botonEnviar"><img id="casa1"
+                src="./gallery/FreeFolk.png"></button></td>
+          <td><button id="tarth" class="botonEnviar"><img id="casa2"
+                src="./gallery/Tarth.png"></button></td>
+            <td>  <button id="targaryen" class="botonEnviar"><img id="casa3"
+                  src="./gallery/Targaryen.png"></button></td>
+            <td><button id="bolton" class="botonEnviar"><img id="casa4"
+                  src="./gallery/Bolton.png"></button></td> 
+                </tr>    
+                <tr>          
+            <td><button id="naharin" class="botonEnviar"><img id="casa5"
+                  src="./gallery/Naharin.png"></button></td>
+            <td><button id="baratheon" class="botonEnviar"><img id="casa6"
+                  src="./gallery/Baratheon.png"></button></td>
+                 
+            <td><button id="tyrell" class="botonEnviar"><img id="casa7"
+                  src="./gallery/Tyrell.png"></button></td>
+            <td><button id="stark" class="botonEnviar"><img id="casa8"
+                  src="./gallery/Stark.png"></button></td>
+                </tr>
+                <tr>
+            <td><button id="martell" class="botonEnviar"><img id="casa9"
+                  src="./gallery/Martell.png"></button></td>
+                
+            <td><button id="mormont" class="botonEnviar"><img id="casa10"
+                  src="./gallery/Mormont.png"></button></td>
+            <td><button id="lannister" class="botonEnviar"><img id="casa11"
+                  src="./gallery/Lannister.png"></button></td>
+            <td><button id="greyjoy" class="botonEnviar"><img id="casa12"
+                  src="./gallery/Greyjoy.png"></button></td>
+                </tr>
+            <tr>  
+            <caption><button id="none" class="botonEnviar"><img id="casa13"
+                  src="./gallery/None.png"></button></caption>
+         </tr>
+     
+      </table>
+
+    <!-- <img id="imagen" src="casas.webp" >  -->
+    <h1 id="saludoJugador"></h1>
+    <!--<button id= "botonEnviar"> boton enviar </button>-->
+
+  </section>
+  <form id="vista3">
+    <header class="header">
+
+      <nav class="nav">
+        <a class="logo nav-link">GOT</a>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a id="casa" class="nav-menu-link nav-link">Home</a>
+          </li>
+          <li class="nav-menu-item">
+            <a id="retornar" class="nav-menu-link nav-link">Return</a>
+          </li>
+          <li class="nav-menu-item">
+            <select name="orden" id="orden">
+              <option value="">Ordenar por:</option>
+              <option id="asc" value="ascendente">De la A a la Z</option>
+              <option id="desc" value="descendente">De la Z a la A</option>
+            </select>
+            <ul id="datos"></ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="vistaCasa"></div>
+      <h1 id="bienvenidoaCasa">BIENVENID@ A TU CASA </h1>
+      <div class="descripcion">
+       <section name="informacioncasa" class="infocasa">
+        <div class="col">
+         <th> <br>
+ <br>      <img src = "[img]" id="imagenpersonaje">
+ <br>
+  <br>  <td name="primerNombre">[nombre]</td>
+  <br>
+  <br>    <td name="family">[familia]</td>
+  <br>     <td name="title">[titulo]</td>
+  <br>    <td name="born">[nacimiento]</td>
+ <br>  <td name="death">[muerte]</td>
+      </th>
+         </div>
+    
+       </section> 
+    
+        <div id="deTodo"></div>
+      </div>
+      </form>
+      <footer></footer>
+      <script src="main.js" type="module"></script>
+    </body>
+  </html>
